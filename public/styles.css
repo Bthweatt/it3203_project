@@ -1,0 +1,84 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styling for the body */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Navbar styling */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  nav .logo {
+    font-size: 1.5rem;
+  }
+  
+  nav .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav .nav-links li {
+    margin: 0 1rem;
+  }
+  
+  nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  nav .nav-links a:hover {
+    color: #ff6347; /* Tomato color on hover */
+  }
+  
+  nav .menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  /* Content section styling */
+  .content-section {
+    padding: 2rem;
+    display: none;
+  }
+  
+  .content-section.active {
+    display: block;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    nav .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    nav .nav-links li {
+      text-align: center;
+      margin: 0.5rem 0;
+    }
+  
+    nav .menu-toggle {
+      display: block;
+    }
+  
+    nav .nav-links.active {
+      display: flex;
+    }
+  }
+  
